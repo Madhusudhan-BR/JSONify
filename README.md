@@ -14,7 +14,9 @@ Information on the overall design:
 
 THe design is very simple. There are just 2 Views.
 
+Assumptions : 
 
+Only considered the first 10 images from the json image link
 
 Improvements: Welcome screen
 
