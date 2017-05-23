@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     let urlString = "http://jsonplaceholder.typicode.com/users"
-    
+    var names = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.downloadFromUrl()
@@ -36,9 +37,21 @@ class ViewController: UIViewController {
                 do{
                     let myJSON = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                     
-                    if let id = myJSON[0]
+                    var temp = myJSON.count
+                    for i in 0..<temp!
                     {
-                        print(id)
+                    if let id = myJSON[i] as? NSDictionary
+                    {
+                        if let name = id["name"] as? String
+                        {
+                            print(name)
+                            self.names.append(name)
+                        }
+                        //print(id)
+                    }
+                    }
+                    OperationQueue.main.addOperation {
+                    self.tableView.reloadData()
                     }
                     
                 }
@@ -55,5 +68,16 @@ class ViewController: UIViewController {
     
     
 }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return names.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        
+        cell.username.text = names[indexPath.row]
+        
+        
+        return cell
+    }
 }

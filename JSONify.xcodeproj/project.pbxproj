@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3328B01ED47BB30095D60C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3328AF1ED47BB30095D60C /* TableViewCell.swift */; };
 		9B6990B91ED3AA1800B74ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6990B81ED3AA1800B74ED6 /* AppDelegate.swift */; };
 		9B6990BB1ED3AA1800B74ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6990BA1ED3AA1800B74ED6 /* ViewController.swift */; };
 		9B6990BE1ED3AA1800B74ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6990BC1ED3AA1800B74ED6 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B3328AF1ED47BB30095D60C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9B6990B51ED3AA1800B74ED6 /* JSONify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6990B81ED3AA1800B74ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6990BA1ED3AA1800B74ED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				9B6990B81ED3AA1800B74ED6 /* AppDelegate.swift */,
 				9B6990BA1ED3AA1800B74ED6 /* ViewController.swift */,
 				9B6990BC1ED3AA1800B74ED6 /* Main.storyboard */,
+				9B3328AF1ED47BB30095D60C /* TableViewCell.swift */,
 				9B6990BF1ED3AA1800B74ED6 /* Assets.xcassets */,
 				9B6990C11ED3AA1800B74ED6 /* LaunchScreen.storyboard */,
 				9B6990C41ED3AA1800B74ED6 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3328B01ED47BB30095D60C /* TableViewCell.swift in Sources */,
 				9B6990BB1ED3AA1800B74ED6 /* ViewController.swift in Sources */,
 				9B6990B91ED3AA1800B74ED6 /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +520,7 @@
 				9B6990DF1ED3AA1800B74ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6990E01ED3AA1800B74ED6 /* Build configuration list for PBXNativeTarget "JSONifyTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				9B6990E21ED3AA1800B74ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6990E31ED3AA1800B74ED6 /* Build configuration list for PBXNativeTarget "JSONifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				9B6990E51ED3AA1800B74ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
